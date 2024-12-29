@@ -1,0 +1,287 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+}
+
+ul a {
+    text-decoration: none;
+}
+
+header:hover {
+    background-color: #d4e188;
+}
+
+#about {
+    padding: 10px;
+    margin-top: 5px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #b5daea;
+    flex-wrap: wrap;
+}
+
+#about > div > img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+#about div img:hover {
+    transform: scaleY(1.1);
+    border: 1px solid black;
+}
+
+.about-right p {
+    font-size: 25px;
+    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-right>p:hover {
+    background-color: rgb(242, 205, 205);   
+}
+
+#about:hover {
+    background-color: #f99db9;
+}
+
+/* Skills Section */
+#skills {
+    margin-top: 5px;
+    padding: 10px;
+    display: flex;
+    background-color: lightblue;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#skills:hover {
+    background-color: #d4e188;
+}
+
+#skills table {
+    margin: 10px;
+    width: 30%;
+}
+
+#skills table:hover {
+    transform: skew(5deg);
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 20px 50px;
+}
+
+th {
+    background-color: #77E4C8;
+}
+
+td {
+    background-color: #ae9569;
+}
+
+/* Projects Section */
+#projects {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5px;
+    background-color: lightblue;
+}
+
+#projects > div {
+    padding: 10px;
+    background-color: rgb(168, 233, 168);
+    width: 300px;
+    height: 300px;
+}
+
+#projects div > img {
+    width: 100%;
+    height: 75%;
+}
+
+#projects div > h3 {
+    margin-top: -2px;
+}
+
+.P_links {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.portfolio_P:hover, .Ecom_P:hover, .Amazon_Clone_P:hover, .Expense_P:hover {
+    transform: scale(1.05);
+}
+
+#projects:hover {
+    background-color: #f99db9;
+}
+
+/* Contact Section */
+#contact {
+    margin-top: 5px;
+    text-align: center;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+#contact input {
+    width: 50%;
+    padding: 10px 0px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 14px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+}
+
+#contact:hover {
+    transform: scale(1.1, 1.1);
+    background-color: #d4e188;
+}
+
+#contact p {
+    padding: 10px;
+    width: 50%;
+    margin: 1% auto;
+}
+
+#contact p:hover {
+    background-color: #F7EED3;
+    border-radius: 30px;
+}
+
+/* Footer */
+footer {
+    margin-top: 10px;
+    padding: 2%;
+    font-size: 30px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer .social-Links, footer .up-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer:hover {
+    background-color: #f99db9;
+}
+
+/* Responsive Design */
+
+@media (min-width: 1200px) {
+    #skills table {
+        width: 25%;
+    }
+
+    #projects > div {
+        width: 350px;
+    }
+}
+
+/* Laptops */
+@media (max-width: 1200px) {
+    #skills table {
+        width: 30%;
+    }
+
+    #projects > div {
+        width: 300px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about {
+        flex-direction: column;
+    }
+
+    #about > div > img {
+        width: 200px;
+    }
+
+    #skills table {
+        width: 45%;
+    }
+
+    #projects > div {
+        width: 45%;
+    }
+
+    #contact input {
+        width: 80%;
+    }
+
+    footer {
+        font-size: 20px;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #about > div > img {
+        width: 150px;
+    }
+
+    #skills table {
+        width: 90%;
+    }
+
+    #projects > div {
+        width: 90%;
+    }
+
+    #contact input {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+
+    footer .social-Links, footer .up-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
